@@ -203,7 +203,7 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-deploy-plugin</artifactId>
 					<configuration>
-						<altDeploymentRepository>repo::default::file:${project.basedir}/../rore-repo/releases</altDeploymentRepository>
+						<altDeploymentRepository>repo::default::file:${project.basedir}/../../rore-repo/releases</altDeploymentRepository>
 					</configuration>
 				</plugin>
 			</plugins>
