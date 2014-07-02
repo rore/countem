@@ -22,7 +22,7 @@ trait Collector extends Logging {
 	// The internal actor system used by the collector
 	private val _system = Configuration.getActorSystem("countem");
 	// the storage actor. 
-	val resizer = DefaultResizer(lowerBound = 1, upperBound = storageParallelism)
+	private val resizer = DefaultResizer(lowerBound = 1, upperBound = storageParallelism)
 	private val storageRouter: ActorRef =
 		_system.actorOf(RoundRobinPool(5, Some(resizer), routerDispatcher = "router-dispatcher")
 				.props(Props(classOf[StorageActor], this)), "storageActor")
