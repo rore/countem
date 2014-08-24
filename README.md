@@ -6,7 +6,7 @@ countem is a Scala library for counting events in a distributed system.
 ### Yet another counting framework? ###
 Yes, well, there are quite a few alternatives and frameworks for event reporting, logging etc. But sometimes what you need is something small, simple and easy to maintain, without too much overhead and administration. This is what countem was intended for.
 
-A very similar concept was used in production for event reporting in [serendip](http://serendip.me). You can read some more about it [here](http://rore.im/posts/building-serendip/).  
+A very similar concept was used in production for event reporting at [serendip](http://serendip.me). You can read some more about it [here](http://rore.im/posts/building-serendip/).  
 
 ### Concept ###
 Counting application events in a distributed system has some pain-points.   
